@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  .matches{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  .card {
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 10PX;
+  }
+  .card:hover{
+   transform: scale(1.1);
+  }
+  .teams{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+  }
+  .team1{
+    margin-left: 10%;
+  }
+  .team2{
+    margin-left: 10%;
+  }
+  .score-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 700px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .team-b{
+    padding-right: 10px;
+  }
+  
+  .team-a, .team-b {
+    text-align: center;
+    size: 10px;
+  }
+  
+  .score {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  img{
+    width: 100px;
+  }
+  .match-info{
+    font-weight: bolder;
+  }
+

@@ -1,0 +1,106 @@
+<div *ngFor="let a of cricket;let i =index">
+<h2 style="text-align:center;">CRICKET LIVE</h2>
+<div class="score-card" >
+  <div class="teams">
+    <div class="team-a">
+      <img src = "{{a.imageA}}">
+      <h2>{{a.teamA}}</h2>
+      <p class="score">{{a.scoreA}} / {{a.wicketA}}</p>
+    </div>
+    <div class="team-b">
+      <img src = "{{a.imageB}}">
+      <h2>{{a.teamB}}</h2>
+      <p class="score">{{a.scoreB}} / {{a.wicketB}}</p>
+    </div>
+  </div>
+  <div class="match-info">
+    <p> Current Over :  <span class="current-over" >{{a.overA}}</span></p>
+  </div>
+</div>
+<br>
+<h2 style="text-align:center;">TEAMS</h2>
+<div class="teams">
+  <div class="team1" *ngFor="let a of cricket;let i =index">
+    <h2>{{a.teamA}}</h2>
+    <div class="players" *ngFor="let a of cricketplayer;let i =index" >
+      <p>{{a.player1}}</p>
+      <p>{{a.player2}}</p>
+      <p>{{a.player3}}</p>
+      <p>{{a.player4}}</p>
+      <p>{{a.player5}}</p>
+      <p>{{a.player6}}</p>
+      <p>{{a.player7}}</p>
+      <p>{{a.player8}}</p>
+      <p>{{a.player9}}</p>
+      <p>{{a.player10}}</p>
+      <p>{{a.player11}}</p>
+      <p>{{a.player12}}</p>
+      <p>{{a.player13}}</p>
+      <p>{{a.player14}}</p>
+     </div>
+  </div>
+  <div class="team2" >
+    <h2>{{a.teamB}}</h2>
+    <div class="player11" *ngFor="let a of cricketplayerb;">
+    <p>{{a.player1}}</p>
+    <p>{{a.player2}}</p>
+    <p>{{a.player3}}</p>
+    <p>{{a.player4}}</p>
+    <p>{{a.player5}}</p>
+    <p>{{a.player6}}</p>
+    <p>{{a.player7}}</p>
+    <p>{{a.player8}}</p>
+    <p>{{a.player9}}</p>
+    <p>{{a.player10}}</p>
+    <p>{{a.player11}}</p>
+    <p>{{a.player12}}</p>
+    <p>{{a.player13}}</p>
+    <p>{{a.player14}}</p>
+  </div>
+  </div>
+</div>
+<br>
+<H2 class="matches">MATCHES</H2>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>TODAY</h3>
+        <p>RCB</p>
+        <p>vs</p>
+        <p>RR</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <h3>Upcoming</h3>
+        <p>SRH</p>
+        <p>vs</p>
+        <p>KXIP</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Upcoming</h3>
+        <p>GT</p>
+        <p>vs</p>
+        <p>MI</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Upcoming</h3>
+        <p>LSC</p>
+        <p>vs</p>
+        <p>DD</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+
+
+  

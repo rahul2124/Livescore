@@ -1,0 +1,95 @@
+<h2 style="text-align:center;">FOOTBALL LIVE</h2>
+<div class="score-card" *ngFor="let a of football;let i =index">
+  <div class="team-a">
+    <img src = "{{a.imageA}}">
+    <h2>{{a.teamA}}</h2>
+    <p class="score"><span>{{a.scoreA}}</span></p>
+  </div>
+  <div class="team-b">
+    <img src = "{{a.imageB}}">
+    <h2>{{a.teamB}}</h2>
+    <p class="score">{{a.scoreB}}</p>
+  </div>
+</div>
+
+<br>
+<h2 style="text-align:center;">TEAMS</h2>
+<div class="teams">
+  <div class="team1" *ngFor="let a of football;let i =index">
+    <h2>{{a.teamA}}</h2>
+    <div *ngFor="let a of footballplayerA;let i =index">
+      <p>{{a.player1}}</p>
+      <p>{{a.player2}}</p>
+      <p>{{a.player3}}</p>
+      <p>{{a.player4}}</p>
+      <p>{{a.player5}}</p>
+      <p>{{a.player6}}</p>
+      <p>{{a.player7}}</p>
+      <p>{{a.player8}}</p>
+      <p>{{a.player9}}</p>
+      <p>{{a.player10}}</p>
+      <p>{{a.player11}}</p>
+      <p>{{a.player12}}</p>
+      <p>{{a.player13}}</p>
+      <p>{{a.player14}}</p>
+    </div>
+  </div>
+    <div class="team2" *ngFor="let a of football;let i =index">
+    <h2>{{a.teamB}}</h2>
+    <div *ngFor="let a of footballplayerB;let i =index">
+      <p>{{a.player1}}</p>
+      <p>{{a.player2}}</p>
+      <p>{{a.player3}}</p>
+      <p>{{a.player4}}</p>
+      <p>{{a.player5}}</p>
+      <p>{{a.player6}}</p>
+      <p>{{a.player7}}</p>
+      <p>{{a.player8}}</p>
+      <p>{{a.player9}}</p>
+      <p>{{a.player10}}</p>
+      <p>{{a.player11}}</p>
+      <p>{{a.player12}}</p>
+      <p>{{a.player13}}</p>
+      <p>{{a.player14}}</p>
+    </div>
+  </div>
+</div>
+<br>
+<H2 class="matches">MATCHES</H2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>TODAY</h3>
+      <p>MECH</p>
+      <p>vs</p>
+      <p>EEE</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Upcoming</h3>
+      <p>IT</p>
+      <p>vs</p>
+      <p>ECE</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Upcoming</h3>
+      <p>CIVIL</p>
+      <p>vs</p>
+      <p>CSE</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Upcoming</h3>
+      <p>S&H</p>
+      <p>vs</p>
+      <p>AI</p>
+    </div>
+  </div>
+</div>
